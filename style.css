@@ -1,0 +1,37 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* background-color: #e3d5ca; */
+}
+/* NAV BAR */
+#nav-bar{
+display: flex;
+background: papayawhip;
+justify-content: center;
+width: 100%;
+position: fixed;
+align-items: center;
+
+}
+.nav-img img{
+padding-right: 60px;
+
+margin: 10px;
+width: 55%;
+} 
+ .menu li{
+    display: inline-block;  
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+    list-style: none;
+    padding-right: 40px;
+    margin-left: 30px;
+    float: left;
+       
+}  
+.menu li a{
+    color: brown;
+}
