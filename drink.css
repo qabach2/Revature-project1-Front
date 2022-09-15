@@ -49,25 +49,125 @@ header .navbar a{
 }         
 .home-text h1{
     text-align: center;
-    width: 60%;
+    width: 80%;
     height: auto;
-    margin-top: 50px;
-    
-    
-    padding-left: 60px;
-        
-        }
-
-
-    .btn{
-     padding: 8px;
+    margin: 80px;
+    padding-left: 100px;  
+}
+#btn-hot{
+    padding: 20px;
     background-color: #cb997e;
-    width:30%;
-    margin:12px auto; 
-    }
-    
+    width:15%;
+    margin-left: 400px; 
+    margin-right: 260px;
+    font-weight: bold;
+    font-size: medium;
 
+ }
+ #btn-iced{
+    padding: 20px;
+    background-color: #cb997e;
+    width: 15%;
+    margin-left: 120px;
+    font-weight: bold;
+    font-size: medium;
+ }
+ .button a{
+    float: inline-end;
     
+ }
+ /* ------------------MAIN PAGE --------------------*/
+ #home{
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+ }
+ .inner-home-content{
+    display: flex;
+ }
+ .picture{
+    width: 40%;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: absolute;
+    border-radius: 30px;
+    margin-bottom: 250px;
+    
+ }
+ .main-txt{
+    margin-left: 800px;
+    margin-top: 200px;
+    font-size: large;
+    width: 30%;
+    justify-content: center;
+ }
+ #add-order{
+    padding: 20px;
+    background-color: brown;
+    width: 35%;
+    margin-left: 125px;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 1010px;
+ }
+ /*====================ADD ORDER ===============*/
+ #add-main{
+    margin-top: 60px;
+    margin-left: 45px;
+    margin-bottom: 35px;
+ }
+ #add-main h1{
+    margin-left: 100px;
+    padding-left: 95px;
+    
+ }
+ .user-name{
+    display: flex;
+ }
+ .user-name h2{
+    margin-top: 25px;
+    padding-right: 20px;
+    margin-left: 15px;
+ }
+ #input-name{
+    width: 35%;
+    margin-top: 18px;
+ }
+ .user-id{
+    display: flex;
+ }
+ .user-id h2{
+    margin-top: 25px;
+    padding-right: 20px;
+    margin-left: 42px;
+ }
+ #input-id{
+    width: 35%;
+    margin-top: 18px;
+ } 
+ .user-drink{
+    display: flex;
+ }
+ .user-drink h2{
+    margin-top: 25px;
+    padding-right: 20px;
+    margin-left: 10px;
+ }
+ #input-drink{
+    width: 35%;
+    margin-top: 18px;
+ } 
+ #submitButton{
+    padding: 10px;
+    background-color: brown;
+    width: 7%;
+    margin-left: 200px;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 25px;
+    
+ }
     
   
      

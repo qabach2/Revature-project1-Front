@@ -1,19 +1,27 @@
-let hotbutton = document.getElementById('hot');
-let icedbutton = document.getElementById('iced');
-hotbutton.onclick = loadAllHotDrinks;
-icedbutton.onclick = loadAllIcesDrinks;
 
-function loadAllHotDrinks(){
-    let request = new XMLHttpRequest();
-    request.open("GET", "http://localhost:9000/allHotDrinks ");
-    request.send();
-    request.onreadystatechange = load;
+let hotbutton = document.getElementById('btn-hot');
+let icedbutton = document.getElementById('btn-iced');
 
-    function load(){
-        if(request.readyState == 4 && request.status == 200){
-            let responsejson = JSON.parse(request.response);
-            console.log(responsejson);
-            loadSpan(responsejson);
+hotbutton.addEventListener("click", GetHotDrinks);
+icedbutton.addEventListener("click",GetIcedDrinks);
+async function GetHotDrinks(){
+    let response = await fetch("http://localhost:9000/allHotDrinks");
+    response =await response.json();
+    console.log(response);
+    loadallHotDrinks(response);
+    
 }
-    }
+function loadallHotDrinks(response){
+    console.log(response);
+}
+
+async function GetIcedDrinks(){
+    let response = await fetch("http://localhost:9000/allIcedDrinks");
+    response =await response.json();
+    console.log(response);
+    loadallIcedDrinks(response);
+    
+}
+function loadallIcedDrinks(response){
+    console.log(response);
 }
