@@ -113,61 +113,67 @@ header .navbar a{
  }
  /*====================ADD ORDER ===============*/
  #add-main{
-    margin-top: 60px;
-    margin-left: 45px;
-    margin-bottom: 35px;
+    margin-top: 80px;
  }
- #add-main h1{
-    margin-left: 100px;
-    padding-left: 95px;
-    
- }
+   .adds h1{
+    margin-left: 200px;
+    margin-bottom: 15px;
+ } 
  .user-name{
     display: flex;
+    margin-left: 55px;
+    
  }
- .user-name h2{
-    margin-top: 25px;
-    padding-right: 20px;
-    margin-left: 15px;
- }
+  .user-name h2{
+ margin-top: 18px;
+ padding-right: 20px;
+ 
+ } 
  #input-name{
-    width: 35%;
-    margin-top: 18px;
+    width: 25%;
+
+    
  }
  .user-id{
     display: flex;
+    margin-left: 55px;
  }
  .user-id h2{
     margin-top: 25px;
-    padding-right: 20px;
-    margin-left: 42px;
+    padding-right: 40px;
+    margin-left: 15px; 
  }
- #input-id{
-    width: 35%;
+  #input-id{
+    width: 25%;
     margin-top: 18px;
  } 
  .user-drink{
     display: flex;
+    margin-left: 55px;
  }
  .user-drink h2{
     margin-top: 25px;
-    padding-right: 20px;
-    margin-left: 10px;
- }
+    padding-right: 20px; 
+    margin-left: 10px; 
+  }
  #input-drink{
-    width: 35%;
+    width: 25%;
     margin-top: 18px;
- } 
+ }  
  #submitButton{
-    padding: 10px;
+    padding: 5px;
     background-color: brown;
-    width: 7%;
-    margin-left: 200px;
-    font-weight: bold;
+    width: 5%;
+     margin-left: 350px; 
+     font-weight: bold;
     font-size: medium;
     margin-top: 25px;
-    
+     
  }
-    
-  
+ .get-remove{
+    margin-left: 600px;
+ }
+ 
+
+   
      
