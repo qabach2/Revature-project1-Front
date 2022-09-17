@@ -54,10 +54,13 @@ header .navbar a{
     margin: 80px;
     padding-left: 100px;  
 }
+.drink-main{
+   display: flex;
+}
 #btn-hot{
-    padding: 20px;
+    padding: 15px;
     background-color: #cb997e;
-    width:15%;
+    width:20%;
     margin-left: 400px; 
     margin-right: 260px;
     font-weight: bold;
@@ -65,9 +68,9 @@ header .navbar a{
 
  }
  #btn-iced{
-    padding: 20px;
+    padding: 15px;
     background-color: #cb997e;
-    width: 15%;
+    width: 60%;
     margin-left: 120px;
     font-weight: bold;
     font-size: medium;
@@ -112,10 +115,121 @@ header .navbar a{
     margin-top: 1010px;
  }
  /*====================ADD ORDER ===============*/
- #add-main{
+ 
+  #add-main{
     margin-top: 80px;
+    margin-left: 35px;
  }
-   .adds h1{
+ #adds-container{
+   display: flex;
+ }
+ #get-or-delete{
+   margin-left: 700px;
+ }
+ .all-ad h1{
+   font-weight: bold;
+   font-size: 25px;
+ }
+ #all-order{
+   margin-top: 20px;
+    padding: 5px;
+    background-color: brown;
+    width: 55%;
+    font-weight: bold;
+    margin-left: 25px;
+    font-size: medium;
+ }
+ .order-h h1{
+   margin-top: 35px;
+   font-weight: bold;
+   font-size: 25px;
+   margin-bottom: 20px;
+ }
+ .user-name{
+   display: flex;
+   }
+ .user-id{
+   display: flex;
+ }  
+ .user-drink{
+   display: flex;
+   } 
+
+   .user-name h3{
+      margin-right: 25px;
+      margin-left: 25px;
+      margin-top: 25px;
+      }
+    .user-id h3{
+      margin-right: 47px;
+      margin-left: 25px;
+      margin-top: 25px;
+    }  
+    .user-drink h3{
+      margin-right: 10px;
+      margin-left: 25px;
+      margin-top: 25px;
+      } 
+      #input-name{
+         margin-top: 25px;
+         margin-bottom: 11px;
+         padding: 10px;
+      } 
+      #input-id{
+         margin-bottom: 25px; 
+         padding: 10px;
+      }
+ #input-drink{
+   width: 59%;
+   margin-left: 18px;
+ }
+
+   #submitButton{
+          margin-top: 20px;
+          padding: 5px;
+          background-color: brown;
+          width: 35%;
+          font-weight: bold;
+          margin-left: 45px;
+          font-size: medium;
+         
+       }
+       
+       #get-order{
+         margin-top: 20px;
+         padding: 5px;
+         background-color: brown;
+         width: 40%;
+         font-weight: bold;
+         margin-left: 85px;
+         font-size: medium;
+         margin-bottom: 15px;
+      }
+      .get-side{
+         display: flex;
+      }
+      .delete-side{
+         display: flex;
+      }
+
+      #get-or-delete h1{
+        
+         font-weight: bold;
+         font-size: 25px;
+         margin-bottom: 20px;}
+      #delete-order{
+         /* margin-top: 10px; */
+         padding: 5px;
+         background-color: brown;
+         width: 40%;
+         font-weight: bold;
+         margin-left: 85px;
+         font-size: medium;
+         margin-top: 15px;
+      }
+
+ /*
+    .adds h1{
     margin-left: 200px;
     margin-bottom: 15px;
  } 
@@ -123,7 +237,8 @@ header .navbar a{
     display: flex;
     margin-left: 55px;
     
- }
+ } */
+ /*
   .user-name h2{
  margin-top: 18px;
  padding-right: 20px;
@@ -173,7 +288,7 @@ header .navbar a{
  .get-remove{
     margin-left: 600px;
  }
- 
+   */
 
    
      
