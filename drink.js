@@ -2,6 +2,9 @@
 let hotbutton = document.getElementById('btn-hot');
 let icedbutton = document.getElementById('btn-iced');
 
+let listHot = document.getElementById("listHot");
+let listIced = document.getElementById("listIced");
+
 
 hotbutton.addEventListener("click", GetHotDrinks);
 icedbutton.addEventListener("click",GetIcedDrinks);
@@ -16,8 +19,17 @@ async function GetHotDrinks(){
     loadallHotDrinks(response);
     
 }
+listHot.innerHTML="";
 function loadallHotDrinks(response){
     console.log(response);
+
+
+    for(let i=0; i<response.length; i++){
+        let newHot =document.createElement("li");
+        newHot.innerHTML= response[i].name;
+        listHot.appendChild(newHot) ;
+    } 
+    
 }
 
 async function GetIcedDrinks(){
@@ -27,22 +39,19 @@ async function GetIcedDrinks(){
     loadallIcedDrinks(response);
     
 }
+listIced.innerHTML="";
 function loadallIcedDrinks(response){
     console.log(response);
 
+    for(let i=0; i<response.length; i++){
+        let newIced =document.createElement("li");
+        newIced.innerHTML=  response[i].name_of_coffee;
+        listIced.appendChild(newIced) ;
+    }
+   
 } 
-//   
-//======================= Add Order====================================
-// async function GetMakeOrder(){
-//     let response = await fetch("http://localhost:9000/allMakeOrder");
-//     response =await response.json();
-//     console.log(response);
-//     loadMakeOrder(response);
-    
-// }
-// function loadMakeOrder(response){
-//     console.log(response);
-// }
+
+
 
 
 

@@ -13,7 +13,9 @@ let getOrder = document.getElementById("get-order");
 
  let orderList =document.getElementById("orderList");
  
- let allOrder = document.getElementById("all-order")
+ let allOrder = document.getElementById("all-order");
+
+ let orderListGet =document.getElementById("orderListGet");
 
 
 allMakeOrder.addEventListener("click", GETallMakeOrder);
@@ -39,10 +41,7 @@ function loadallMakeOrder(response){
         newItem.innerHTML="Id: " +response[i].Customer_Id + "  Name: " + response[i].Customer_Name + " Order: "+ response[i].Drink_Name;
         orderList.appendChild(newItem) ;
     }
-    
-
-    
-}
+       }
 
 // ========TO MAKE  NEW ORDER=======
 
@@ -84,6 +83,13 @@ async function DELETEMakeOrder(){
 async function loadallMakeOrderByName(response){
     content.innerHTML = "";
     console.log(response);
+
+    orderListGet.innerHTML = "";
+    for(let i=0; i<response.length; i++){
+        let newItemGet =document.createElement("li");
+        newItemGet.innerHTML= " Order: "+ response[i].Drink_Name;
+        orderList.appendChild(newItemGet) ;
+    }
 }
 
 
