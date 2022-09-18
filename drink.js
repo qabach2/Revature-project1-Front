@@ -19,11 +19,11 @@ async function GetHotDrinks(){
     loadallHotDrinks(response);
     
 }
-listHot.innerHTML="";
+
 function loadallHotDrinks(response){
     console.log(response);
 
-
+    listHot.innerHTML="";
     for(let i=0; i<response.length; i++){
         let newHot =document.createElement("li");
         newHot.innerHTML= response[i].name;
@@ -39,10 +39,10 @@ async function GetIcedDrinks(){
     loadallIcedDrinks(response);
     
 }
-listIced.innerHTML="";
+
 function loadallIcedDrinks(response){
     console.log(response);
-
+    listIced.innerHTML="";
     for(let i=0; i<response.length; i++){
         let newIced =document.createElement("li");
         newIced.innerHTML=  response[i].name_of_coffee;

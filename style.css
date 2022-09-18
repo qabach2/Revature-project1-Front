@@ -70,7 +70,7 @@ header .navbar a{
  #btn-iced{
     padding: 15px;
     background-color: #cb997e;
-    width: 60%;
+    width: 20%;
     margin-left: 120px;
     font-weight: bold;
     font-size: medium;
@@ -243,67 +243,47 @@ header .navbar a{
          margin-top: 15px;
       }
 
- /*
-    .adds h1{
-    margin-left: 200px;
-    margin-bottom: 15px;
- } 
- .user-name{
-    display: flex;
-    margin-left: 55px;
-    
- } */
- /*
-  .user-name h2{
- margin-top: 18px;
- padding-right: 20px;
+/*========= To list all orders========== */
+
+#orderList{
+   text-decoration: none ;
+   font-size: large;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-top: 15px;
+}
+#listHot{
+   margin-left: 400px;
+   font-size: 2rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-top: 50px;
+   list-style-type: none;
+   
+}
+#listIced{
+   margin-left: 120px;
+   font-size: 2rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-top: 50px;
+   list-style-type: none;
+
+}
+#btnOrder{
+   margin-top: 150px;
+   padding: 10px;
+   background-color: #cb997e;
+   width: 15%;
+   font-weight: bold;
+   margin-right: 800px;
+   font-size: medium;
+   float: right;
+   }
+
+    #listOrderGet{
+   font-size: 2rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-top: 20px;
+   list-style-type: none;
+    }
  
- } 
- #input-name{
-    width: 25%;
-
-    
- }
- .user-id{
-    display: flex;
-    margin-left: 55px;
- }
- .user-id h2{
-    margin-top: 25px;
-    padding-right: 40px;
-    margin-left: 15px; 
- }
-  #input-id{
-    width: 25%;
-    margin-top: 18px;
- } 
- .user-drink{
-    display: flex;
-    margin-left: 55px;
- }
- .user-drink h2{
-    margin-top: 25px;
-    padding-right: 20px; 
-    margin-left: 10px; 
-  }
- #input-drink{
-    width: 25%;
-    margin-top: 18px;
- }  
- #submitButton{
-    padding: 5px;
-    background-color: brown;
-    width: 5%;
-     margin-left: 350px; 
-     font-weight: bold;
-    font-size: medium;
-    margin-top: 25px;
-     
- }
- .get-remove{
-    margin-left: 600px;
- }
-   */
-
    
      

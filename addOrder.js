@@ -15,8 +15,8 @@ let getOrder = document.getElementById("get-order");
  
  let allOrder = document.getElementById("all-order");
 
- let orderListGet =document.getElementById("orderListGet");
-
+ let listOrderGet =document.getElementById("listOrderGet");
+ 
 
 allMakeOrder.addEventListener("click", GETallMakeOrder);
 submitButton.addEventListener("click", POSTMakeOrder);
@@ -38,7 +38,7 @@ function loadallMakeOrder(response){
     orderList.innerHTML = "";
     for(let i=0; i<response.length; i++){
         let newItem =document.createElement("li");
-        newItem.innerHTML="Id: " +response[i].Customer_Id + "  Name: " + response[i].Customer_Name + " Order: "+ response[i].Drink_Name;
+        newItem.innerHTML= response[i].Customer_Name +" Order: "+ response[i].Drink_Name;
         orderList.appendChild(newItem) ;
     }
        }
@@ -62,7 +62,7 @@ async function POSTMakeOrder(){
     });
     GETallMakeOrder();
 }
-orderForm.innerHTML = "";
+// orderForm.innerHTML = "";
 
 
 //============================ Delete Order====================
@@ -77,20 +77,19 @@ async function DELETEMakeOrder(){
     let name =getOrderName.value;
     let response = await fetch("http://localhost:9000/MakeOrder/Customer_Name/"+name);
     response = await response.json();
+    console.log(response);
+    loadallMakeOrderByNames(response);
+   
+ }
+
+ function loadallMakeOrderByNames(response){
+     console.log(response);
+    listOrderGet.innerHTML = "";   
+     let order1 =document.createElement("li");
+     order1.innerHTML="Order: " +response.Drink_Name;
+     listOrderGet.appendChild(order1) ;
     
-    console.log(response);
-}
-async function loadallMakeOrderByName(response){
-    content.innerHTML = "";
-    console.log(response);
-
-    orderListGet.innerHTML = "";
-    for(let i=0; i<response.length; i++){
-        let newItemGet =document.createElement("li");
-        newItemGet.innerHTML= " Order: "+ response[i].Drink_Name;
-        orderList.appendChild(newItemGet) ;
-    }
 }
 
-
+ 
 
