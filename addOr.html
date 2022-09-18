@@ -21,6 +21,7 @@
         <div id="adds-container">
             <div class="adds-first">
                 <div class="all-ad">
+                    
                     <h1>All Make Orders</h1>
                     <button id = "all-order">All Orders</button>
                 </div>
@@ -43,28 +44,31 @@
                    <div id="submit-btn">
                      <button id = submitButton>Submit</button>
                    </div>
+                
+                   <ul id="orderList"></ul>
+               
                 </div>
             </div>
             <div id="get-or-delete">
                <h1>Get your Order</h1>
                <div class="get-side">
-                  <h3>Your Name <input id = "input-name" type="text" placeholder="Type your name here" ></h3>
-                  
+                  <h3>Your Name <input id = "input-name-get" type="text" placeholder="Type your name here" ></input></h3>
                </div>
                <div>
                   <button id = "get-order">Get</button>
                </div>
                <h1>Delete Your Order</h1>
                <div class="delete-side">
-                  <h3>Your Name <input id = "input-name" type="text" placeholder="Type your name here" ></h3>
+                  <h3>Your Name <input id = "inputNameDelete" type="text" placeholder="Type your name here" ></h3>
                   
                </div>
                <div>
-                  <button id = "delete-order">Delete </button>
+                  <button id = "removeOrder">Delete </button>
                </div>
             </div>
          </div>
         </div>
      </section> 
 </body>
+<script src="./addOrder.js"></script>
 </html>

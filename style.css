@@ -107,7 +107,7 @@ header .navbar a{
  }
  #add-order{
     padding: 20px;
-    background-color: brown;
+    background-color: #cb997e;
     width: 35%;
     margin-left: 125px;
     font-weight: bold;
@@ -133,7 +133,7 @@ header .navbar a{
  #all-order{
    margin-top: 20px;
     padding: 5px;
-    background-color: brown;
+    background-color: #cb997e;
     width: 55%;
     font-weight: bold;
     margin-left: 25px;
@@ -175,6 +175,20 @@ header .navbar a{
          margin-bottom: 11px;
          padding: 10px;
       } 
+      #input-name-get{
+         margin-top: 25px;
+         margin-bottom: 11px;
+         padding: 10px;  
+      }
+
+      #inputNameDelete{
+         margin-top: 25px;
+         margin-bottom: 11px;
+         padding: 10px;  
+      }
+      
+      
+
       #input-id{
          margin-bottom: 25px; 
          padding: 10px;
@@ -187,7 +201,7 @@ header .navbar a{
    #submitButton{
           margin-top: 20px;
           padding: 5px;
-          background-color: brown;
+          background-color: #cb997e;
           width: 35%;
           font-weight: bold;
           margin-left: 45px;
@@ -198,7 +212,7 @@ header .navbar a{
        #get-order{
          margin-top: 20px;
          padding: 5px;
-         background-color: brown;
+         background-color: #cb997e;
          width: 40%;
          font-weight: bold;
          margin-left: 85px;
@@ -208,6 +222,7 @@ header .navbar a{
       .get-side{
          display: flex;
       }
+      
       .delete-side{
          display: flex;
       }
@@ -217,10 +232,10 @@ header .navbar a{
          font-weight: bold;
          font-size: 25px;
          margin-bottom: 20px;}
-      #delete-order{
+      #removeOrder{
          /* margin-top: 10px; */
          padding: 5px;
-         background-color: brown;
+         background-color: #cb997e;
          width: 40%;
          font-weight: bold;
          margin-left: 85px;
